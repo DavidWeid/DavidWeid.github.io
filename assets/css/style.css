@@ -57,6 +57,7 @@ a {
     padding: 20px;
     height: 74px;
     font-size: 20px;
+    line-height: 150%;
     font-weight: bold;
     border: none;
 }
@@ -71,23 +72,30 @@ a {
     float: right;
     padding: 20px;
     height: 74px;
+    line-height: 150%;
+}
+
+#about,
+#portfolio {
+    border-right: 1px solid #cccccc;
 }
 
 .content-real {
     background: #ffffff;
     border-color: #dddddd;
+    border: 2px solid;
     width: 960px;
     margin: 0 auto;
     clear: both;
 }
 
 #profile-pic {
-    margin: 16px;
+    margin: 18px;
     float: left;
 }
 
 #text {
-    margin: 16px;
+    margin: 18px;
     font-size: 18px;
     line-height: 150%;
 }
@@ -123,11 +131,57 @@ a {
 input[type="submit"] {
     padding: 6px 18px;
     background: #4aaaa5;
-    color: #cccccc;
+    color: white;
     border: 0 none;
-    width: 100%;
+    width: 120px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 200;
 }
 
 input[type="text"] {
     width: 100%;
 }
+
+.portfolio-links {
+    width: 100%;
+    padding: 24px;
+}
+
+.p-block {
+    padding: 24px;
+    position: relative;
+}
+ #p1 {
+     float: left;
+     width: 25%;
+ }
+
+ #p2 {
+     float: left;
+     width: 75%;
+ }
+
+ #p3 {
+     float: left;
+     width: 25%;
+ }
+ 
+ #p4 {
+     float: left;
+     width: 75%;
+ }
+
+ #p5 {
+     clear: both;
+ }
+
+ .p-text {
+     padding: 8px 16px;
+     line-height: 150%;
+     color: white;
+     background: #4aaaa5;
+     width: 200px;
+     position: absolute;
+     bottom: 42px;
+ }
