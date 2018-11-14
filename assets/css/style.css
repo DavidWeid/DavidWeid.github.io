@@ -74,6 +74,15 @@ a {
     height: 74px;
     line-height: 150%;
 }
+#about:hover {
+    background-color: #cccccc;
+}
+#portfolio:hover {
+    background-color: #cccccc;
+}
+#contact:hover {
+    background-color: #cccccc;
+}
 
 #about,
 #portfolio {
@@ -139,6 +148,10 @@ input[type="submit"] {
     font-weight: 200;
 }
 
+input[type="submit"]:hover {
+    background-color: #50b7b1;
+}
+
 input[type="text"] {
     width: 100%;
 }
@@ -152,6 +165,16 @@ input[type="text"] {
     padding: 24px;
     position: relative;
 }
+
+/*.img:hover {
+    outline: 5px solid #393f44;
+    -ms-transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+}*/
+
  #p1 {
      float: left;
      width: 25%;
@@ -185,3 +208,21 @@ input[type="text"] {
      position: absolute;
      bottom: 42px;
  }
+
+ .p-text-link {
+     color: white;
+ }
+ .p-text-link:hover {
+     color: #84F6F6;
+ }
+
+ #name-home {
+     color: #ffffff;
+ }
+
+#name-plate {
+    background-color: #4aaaa5;
+}
+#name-plate:hover {
+    background-color: #50b7b1;
+}
