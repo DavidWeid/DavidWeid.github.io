@@ -2,10 +2,7 @@
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    margin: 0;
-}
+/*Sticky Footer*/
 
 body{
     display: flex;
@@ -20,6 +17,13 @@ body{
     flex-shrink: 0;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/*General Body Format*/
+
 body {
     color: #777777;
     background-image: url("../images/mochaGrunge.png");
@@ -31,18 +35,18 @@ a {
     color: #777777;
 }
 
+/*Navigation Bar*/
+
 #all-the-way {
     background: #ffffff;
     height: 74px;
     margin: 0 0 24px 0;
-    border-bottom-color: #cccccc;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid #cccccc;
 }
 
 .top-bar {
     background: #ffffff;
-    border-color: #cccccc;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid #cccccc;
     margin: 0 auto;
     margin-bottom: 20px;
     width: 960px;
@@ -64,6 +68,17 @@ a {
 
 #nav-bar {
     float: right;
+}
+
+#name-home {
+    color: #ffffff;
+}
+
+#name-plate {
+   background-color: #4aaaa5;
+}
+#name-plate:hover {
+   background-color: #50b7b1;
 }
 
 #about,
@@ -89,6 +104,9 @@ a {
     border-right: 1px solid #cccccc;
 }
 
+/*Content of Window*/
+
+    /*Content of Page*/
 .content-real {
     background: #ffffff;
     border-color: #dddddd;
@@ -97,34 +115,7 @@ a {
     margin: 0 auto;
     clear: both;
 }
-
-#profile-pic {
-    margin: 18px;
-    float: left;
-}
-
-#text {
-    margin: 18px;
-    font-size: 18px;
-    line-height: 150%;
-}
-
-#contact-form {
-    margin: 16px;
-    font-size: 18px;
-    line-height: 150%;
-}
-
-#footer {
-    background: #666666;
-    color: #dddddd;
-    text-align: center;
-    padding: 20px;
-    margin: 24px 0 0 0;
-    border-top: 8px solid #4aaaa5;
-    clear: both;
-}
-
+    /*Page Headers*/
 #about-me,
 #contact-header,
 #portfolio-header {
@@ -135,6 +126,24 @@ a {
     line-height: 150%;
     padding: 20px;
     border-bottom: 1px solid #cccccc;
+}
+    /*Index Content*/
+#profile-pic {
+    margin: 18px;
+    float: left;
+}
+
+#text {
+    margin: 18px;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: justify;
+}
+    /*Contact Page*/
+#contact-form {
+    margin: 16px;
+    font-size: 18px;
+    line-height: 150%;
 }
 
 input[type="submit"] {
@@ -156,6 +165,7 @@ input[type="text"] {
     width: 100%;
 }
 
+    /*Portfolio Page*/
 .portfolio-links {
     width: 100%;
     padding: 24px;
@@ -166,14 +176,16 @@ input[type="text"] {
     position: relative;
 }
 
-/*.img:hover {
+/*
+.img:hover {
     outline: 5px solid #393f44;
     -ms-transform: rotate(-10deg);
     -webkit-transform: rotate(-10deg);
     -moz-transform: rotate(-10deg);
     -o-transform: rotate(-10deg);
     transform: rotate(-10deg);
-}*/
+}
+*/
 
  #p1 {
      float: left;
@@ -216,13 +228,60 @@ input[type="text"] {
      color: #84F6F6;
  }
 
- #name-home {
-     color: #ffffff;
- }
-
-#name-plate {
-    background-color: #4aaaa5;
+/*Footer*/
+#footer {
+    background: #666666;
+    color: #dddddd;
+    text-align: center;
+    padding: 20px;
+    margin: 24px 0 0 0;
+    border-top: 8px solid #4aaaa5;
+    clear: both;
+    width: 100%;
 }
-#name-plate:hover {
-    background-color: #50b7b1;
+
+@media screen and (max-width: 980px) {
+    body {
+        background-image: url("../images/green_cup.png")
+    }
+    .content-real {
+        width: 800px;
+    }
+    .all-the-way,{
+        width: 980px;
+    }
+    .top-bar {
+        width: 800px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-image: url("../images/funky-lines.png")
+    }
+    .content-real {
+        width: 650px;
+    }
+    .all-the-way {
+        width: 768px;
+    }
+    .top-bar {
+        width: 650px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    body {
+        background-image: none;
+        background-color: white;
+    }
+    .content-real {
+        width: 500px;
+    }
+    .all-the-way {
+        width:640px;
+    }
+    .top-bar {
+        width:500px;
+    }
 }
